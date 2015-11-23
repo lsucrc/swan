@@ -38,3 +38,5 @@ RUN wget http://swanmodel.sourceforge.net/download/zip/refrac.tar.gz && \
 WORKDIR /root/refrac
 RUN time swanrun -input a11refr -mpi 4
 
+# clean up tmp
+RUN yum clean all
