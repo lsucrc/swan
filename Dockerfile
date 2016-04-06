@@ -23,4 +23,5 @@ RUN wget http://swanmodel.sourceforge.net/download/zip/refrac.tar.gz && \
 # test
 WORKDIR /model/refrac
 # RUN time swanrun -input a11refr -mpi 4
-RUN echo 'swanrun -input a11refr -mpi 6' > /model/run.sh
+RUN echo 'swanrun -input a11refr -mpi 6' > /model/refrac/run.sh
+RUN chmod 744 run.sh
